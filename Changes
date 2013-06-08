@@ -1,0 +1,9 @@
+Revision history for IPC-GimpFu
+
+0.02    2013-06-08
+        Rewrite as an object-oriented module, with a bunch of tests
+        added for good measure.
+
+0.01    2013-06-08
+        First version, with an interface that needs a lot of rewrite.
+
