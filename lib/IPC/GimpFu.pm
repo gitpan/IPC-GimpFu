@@ -16,11 +16,11 @@ IPC::GimpFu - interface to Gimp's script-fu server
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 =head1 SYNOPSIS
@@ -55,9 +55,9 @@ Create a new object, using an anonymous hash. The following can be set
 this way: autostart, server, and port; autostart is only valid if
 server is localhost; default settings are:
 
- * autostart => 0
- * server => 'localhost'
- * port => '10008'
+    autostart => 0
+    server => 'localhost'
+    port => '10008'
 
 =cut
 
@@ -86,7 +86,7 @@ sub new {
 
 =head2 start
 
-Start the server...
+Start the server, if configured on localhost.
 
 =cut
 
@@ -123,7 +123,7 @@ sub start {
 
 =head2 stop
 
-Stop the server...
+Stop the server, if configured on localhost.
 
 =cut
 
@@ -150,8 +150,8 @@ sub stop {
 Run a given command on the specified server, connecting on the fly if
 needed. Can be passed a command, or a hash with a file key:
 
-$gimp->run("some command");
-$gimp->run({ file => 'foo.scm' });
+    $gimp->run("some command");
+    $gimp->run({ file => 'foo.scm' });
 
 =cut
 
@@ -200,8 +200,7 @@ sub run {
   }
 }
 
-=head2 _run_cmd
-
+=for comment _run_cmd
 Helper called from run(), dealing with a command passed as a string.
 
 =cut
@@ -305,12 +304,10 @@ sub _gimp_send_command {
   return $response;
 }
 
-=head2 _is_localhost($server)
-
+=for comment _is_localhost($server)
 Tiny helper helping decide whether the specified server is localhost.
 
 =cut
-
 sub _is_localhost {
   my $server = shift;
   return scalar(grep { $_ eq $server } qw(localhost 127.0.0.1));

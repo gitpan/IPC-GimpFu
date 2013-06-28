@@ -26,6 +26,12 @@ To install this module, run the following commands:
 	make test
 	make install
 
+If the gimp binary isn't available, the first command can be changed
+into:
+
+	BYPASS_MISSING_GIMP=1 perl Makefile.P
+
+
 SUPPORT AND DOCUMENTATION
 
 After installing, you can find documentation for this module with the

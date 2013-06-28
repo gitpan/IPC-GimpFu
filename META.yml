@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               IPC-GimpFu
-version:            0.02
+version:            0.03
 abstract:           interface to Gimp's script-fu server
 author:
     - Cyril Brulebois <kibi@debian.org>
@@ -11,7 +11,12 @@ configure_requires:
 build_requires:
     ExtUtils::MakeMaker:  0
 requires:
-    Test::More:  0
+    Carp:            0
+    Cwd:             0
+    IO::Socket::IP:  0
+    Proc::Daemon:    0
+    Proc::Killall:   0
+    Test::More:      0
 no_index:
     directory:
         - t

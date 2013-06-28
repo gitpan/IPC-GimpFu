@@ -1,5 +1,10 @@
 Revision history for IPC-GimpFu
 
+0.03    2013-06-28
+        Fix pod formatting.
+        Specify module dependencies properly, exit if gimp isn't
+        available (while still allowing to bypass that check).
+
 0.02    2013-06-08
         Rewrite as an object-oriented module, with a bunch of tests
         added for good measure.

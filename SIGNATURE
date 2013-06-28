@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.68.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,13 +14,13 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 8a03ec761c01c631dd40bdd9b6346b8accc39202 Changes
+SHA1 d91d11cf4001d5d55626916a49c05ff3de051922 Changes
 SHA1 e608bd5b53dbb25ba05ecfbbbcf24d64cdbf90a4 MANIFEST
-SHA1 16bf647f18381da8beff39104fd467f2bbfbeaaa META.yml
-SHA1 806dd6e098a6af1bceb71396a8bac7113f872e40 Makefile.PL
-SHA1 ca678ddf41e92c4ec2453c1da1a8d94f0bbbf957 README
+SHA1 7e58f64a57896f2c2eb0d86968f97fbe2945f821 META.yml
+SHA1 f1a893774459b15806e9727f2f05b88d496bccd9 Makefile.PL
+SHA1 d441c9e11d6904c7d0bef7fa16f5b52e77ca7c66 README
 SHA1 aa69c368840f0b1a114fa4899a49ff0d0b6001f8 ignore.txt
-SHA1 9b1656efc448e05b9d3f86f47534f7467b85295c lib/IPC/GimpFu.pm
+SHA1 123129ed3b2c0fab2d1344cf9cc98d2336774c59 lib/IPC/GimpFu.pm
 SHA1 3ae3b80d0f16e1a33061bde89d1ccbb23660db03 t/00-load.t
 SHA1 4344b2bb10b7bb4f5cb8dee2ac34a0d7378fb474 t/01-new.t
 SHA1 06c45d0cef8a2c734e47703cbe35ec05551aebdf t/02-start-stop.t
@@ -31,7 +31,7 @@ SHA1 640935336dc1123c0069bcf5432bcaedc2cf22d3 t/pod.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.12 (GNU/Linux)
 
-iEYEARECAAYFAlGzqyIACgkQeGfVPHR5Nd2IgwCgmlF2yetu+Nbrw6evIkpfbqJp
-1aMAnRog6C73cEKjqu0Yro3JHAKedTOc
-=6edv
+iEYEARECAAYFAlHN72IACgkQeGfVPHR5Nd3bYwCgoIQ8kuUOQomVx9Ab/roIMGzX
+pWQAni5Plpyig7yvQuy6mK6CtUbKXYNJ
+=rw0R
 -----END PGP SIGNATURE-----
